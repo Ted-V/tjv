@@ -11,30 +11,44 @@
     --text-color: #00aa00;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     font-family: 'Roboto Mono', sans-serif;
     background-color: rgb(22, 22, 22);
     color: #ccc;
     font-size: 18px;
     line-height: 1.6;
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: 1fr auto;
 }
 
 .icon {
     color: var(--text-color);
     font-size: 150px;
     font-weight: 700;
-    letter-spacing: -5px;
+    letter-spacing: -25px;
+    margin-right: 50px;
 }
 
 h1 {
     color: var(--text-color);
     font-size: 50px;
     letter-spacing: -5px;
-    margin-bottom: 20px;
 }
 
 h2 {
     color: var(--text-color)
+}
+
+.sub-heading {
+    font-size: 30px;
+    color: #ccc;
+    margin-top: -14px;
+    margin-left: 5px;
 }
 
 h3 {
@@ -55,26 +69,52 @@ p {
 }
 
 nav {
-    width: 30%;
+    width: 40%;
+    margin-top: 5px;
 }
 
 nav ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 nav ul li {
     color: var(--text-color);
+    font-size: 22px;
+    padding-left: 15px;
 }
 
 .container {
-    max-width: 600px;
+    max-width: 1000px;
     margin: auto;
     height: 70vh;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
+}
+
+.footer-container {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+}
+
+.link-container {
+    padding: 1em;
+}
+
+.link-container a {
+    padding-left: 1em;
+    color: #ccc;
+}
+
+.link-container a:hover {
+    color: var(--text-color);
 }
 
 .wb-body {
