@@ -11,17 +11,17 @@
 
 <body>
     <div class="container">
-        <nav>
-            <ul>
-                <li id="about">/about</li>
-                <li id="contact">/contact</li>
-            </ul>
-        </nav>
-
+        <div class="icon">{tjv}</div>
         <main>
-            <div class="icon">{tjv}</div>
             <h1>Ted-Verdonkschot:$<span class="cursor">|</span></h1>
-            <h3> Find me on:
+            <h2 class="sub-heading">Web Developer</h2>
+            <nav>
+                <ul>
+                    <li id="about">/about</li>
+                    <li id="contact">/contact</li>
+                </ul>
+            </nav>
+            <!-- <h3> Find me on:
                 <ul>
                     <li>
                         <a href="" target="_blank">
@@ -34,28 +34,41 @@
                         </a>
                     </li>
                 </ul>
-            </h3>
+            </h3> -->
         </main>
     </div>
+    <footer>
+        <div class="footer-container">
+            <div class="link-container">
+                <a href="" target="_blank">GitHub</a>
+                <a href="" target="_blank">Email</a>
+                <a href="" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
 
     <div class="hidden">
         <div id="about-content">
-            <h2>about-me:$<span class="cursor">|</span></h2>
-            <p>Hi, I'm Ted Verdonkschot, a budding developer who enjoys converting ideas into
+            <h2>/about-me:$<span class="cursor">|</span></h2>
+            <p>Hi, I'm Ted, a developer who enjoys converting ideas into
                 realities on the web.</p>
             <p>I have experience with HTML, CSS, and JavaScript.</p>
         </div>
         <div id="contact-content">
-            <h2>contact-me:$<span class="cursor">|</span></h2>
-            <p>You can reach me by the following: </p>
+            <h2>/contact-me:$<span class="cursor">|</span></h2>
+            <p>You can reach me at: </p>
             <ul>
-                <li>Phone: 999-999-9999</li>
-                <li>Email: ted@email.com</li>
+                <li>Email: <a href="" target="_blank">
+                    tedverdonkschot@outlook.com
+                </a></li>
+                <li>LinkedIn: <a href="" target="_blank">
+                        Ted Verdonkschot
+                    </a> </li>
             </ul>
         </div>
     </div>
     <script src="js/winbox.bundle.js"></script>
-    <script src="app.js"></script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>
